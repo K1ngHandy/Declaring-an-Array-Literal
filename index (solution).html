@@ -7,6 +7,44 @@
     DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run". 
     */
 
+    /* 
+    PROBLEM 1: Create an array that contains all the primitives (ie. boolean, number, string, null and undefined) using an array literal
+    */
+    const arr = [true, 1, 'hey!', undefined, null];
+
+    /* 
+    PROBLEM 2: Create an array containing numbers from 1 to 5. Replace each number in the array with the corresponding value spelled out in words (e.g one, two, ..., five).
+    */
+    const numbers = [1, 2, 3, 4, 5];
+    numbers[0] = 'one';
+    numbers[1] = 'two';
+    numbers[2] = 'three';
+    numbers[3] = 'four';
+    numbers[4] = 'five';
+
+    /* 
+    PROBLEM 3: To the array created in PROBLEM 2, add the number 'six' to index 6. Print to the conole the updated array
+    */
+    numbers[6] = 'six';
+    console.log(numbers);
+
+    /* 
+    PROBLEM 4: Create an empty array (sea) using an array literal, then assign values of 'sponge', 'star fish', 'plankton' and 'squid' to index 1, 2, 3 and 4 respectively. 
+    */
+    const sea = [];
+    sea[1] = 'sponge';
+    sea[2] = 'star fish';
+    sea[3] = 'plankton';
+    sea[4] = 'squid';
+
+    /* 
+    PROBLEM 5 (DEBUGGING): We are trying to print to the console all the creatures in the array created in PROBLEM 4 but for some reason, we see "undefined" among the list.
+    Fix this so that the output on the console makes sense
+    */
+    for (let i = 1; i < sea.length; i++) {
+      console.log(`you can find a ${sea[i]} under the sea`);
+    }
+
   </script> 
  
 </body>
